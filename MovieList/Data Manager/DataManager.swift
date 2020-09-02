@@ -23,7 +23,7 @@ import Foundation
          "Parasite",
          "Joker",
          "The Prestige",
-         "Avengers: Endgame"
+         "Avengers Endgame"
      ]
      
  //album = year
@@ -52,7 +52,7 @@ import Foundation
  "Parasite (2019)",
  "Joker (2019)",
  "The Prestige (2006)",
- "Avengers: Endgame (2019)"
+ "Avengers Endgame (2019) "
      ]
      
  }
