@@ -10,6 +10,7 @@ import UIKit
 
 class MovieListTableViewController: UITableViewController {
     
+    @IBOutlet var tableViewer: UITableView!
     
      var movies = Movie.createMovie()
      
@@ -121,6 +122,28 @@ class MovieListTableViewController: UITableViewController {
                  detailVC.movie = movies[indexPath.row]
              }
          }
-         
+  
     
+    
+    
+    // From Lesson 17 on 04.09.2020
+    func tableView(_ tableView: UITableView, moveRowAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath) {
+        let currentMovie = movies.remove(at: sourceIndexPath.row)
+        movies.insert(currentMovie, at: destinationIndexPath.row)
+    }
+    
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete{
+            let alert = UIAlertController(title: "Are you sure you want to delete this movie?", message: nil, preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+            
+            alert.addAction(UIAlertAction(title: "Delete", style: .default, handler: {(_) in self.movies.remove(at: indexPath.row)
+            UIView.transition(with: tableView, duration: 1.0, options: .transitionCrossDissolve, animations: {
+                self.tableViewer.reloadData()
+                }, completion: nil)
+            }))
+            self.present(alert, animated: true)
+            }
+    }
 }
+
