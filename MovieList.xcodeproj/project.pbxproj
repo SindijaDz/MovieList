@@ -14,8 +14,12 @@
 		1F6F6DA225000FC100E07DED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F6F6DA025000FC100E07DED /* LaunchScreen.storyboard */; };
 		1F6F6DAA250010AF00E07DED /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6F6DA9250010AF00E07DED /* DetailViewController.swift */; };
 		1F6F6DAC250010DA00E07DED /* MovieListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6F6DAB250010DA00E07DED /* MovieListTableViewController.swift */; };
-		1F6F6DB2250011E200E07DED /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6F6DB1250011E200E07DED /* DataManager.swift */; };
+		1F6F6DB2250011E200E07DED /* MovieDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6F6DB1250011E200E07DED /* MovieDataManager.swift */; };
 		1F6F6DB52500122800E07DED /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6F6DB42500122800E07DED /* Movie.swift */; };
+		1F88CABA2503CC8500AF3772 /* MusicDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F88CAB92503CC8500AF3772 /* MusicDataManager.swift */; };
+		1F88CABC2503D6D700AF3772 /* Music.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F88CABB2503D6D700AF3772 /* Music.swift */; };
+		1F88CABE2503DC9200AF3772 /* MusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F88CABD2503DC9200AF3772 /* MusicViewController.swift */; };
+		1F88CAC02503DFC100AF3772 /* MusicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F88CABF2503DFC100AF3772 /* MusicTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,8 +32,12 @@
 		1F6F6DA325000FC100E07DED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1F6F6DA9250010AF00E07DED /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		1F6F6DAB250010DA00E07DED /* MovieListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListTableViewController.swift; sourceTree = "<group>"; };
-		1F6F6DB1250011E200E07DED /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		1F6F6DB1250011E200E07DED /* MovieDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDataManager.swift; sourceTree = "<group>"; };
 		1F6F6DB42500122800E07DED /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		1F88CAB92503CC8500AF3772 /* MusicDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicDataManager.swift; sourceTree = "<group>"; };
+		1F88CABB2503D6D700AF3772 /* Music.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Music.swift; sourceTree = "<group>"; };
+		1F88CABD2503DC9200AF3772 /* MusicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicViewController.swift; sourceTree = "<group>"; };
+		1F88CABF2503DFC100AF3772 /* MusicTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +102,8 @@
 		1F6F6DAF2500118D00E07DED /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				1F6F6DAB250010DA00E07DED /* MovieListTableViewController.swift */,
-				1F6F6DA9250010AF00E07DED /* DetailViewController.swift */,
+				1F88CAC12503DFC800AF3772 /* Movie */,
+				1F88CAC22503DFE000AF3772 /* Music */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -103,7 +111,8 @@
 		1F6F6DB0250011C600E07DED /* Data Manager */ = {
 			isa = PBXGroup;
 			children = (
-				1F6F6DB1250011E200E07DED /* DataManager.swift */,
+				1F6F6DB1250011E200E07DED /* MovieDataManager.swift */,
+				1F88CAB92503CC8500AF3772 /* MusicDataManager.swift */,
 			);
 			path = "Data Manager";
 			sourceTree = "<group>";
@@ -112,8 +121,27 @@
 			isa = PBXGroup;
 			children = (
 				1F6F6DB42500122800E07DED /* Movie.swift */,
+				1F88CABB2503D6D700AF3772 /* Music.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		1F88CAC12503DFC800AF3772 /* Movie */ = {
+			isa = PBXGroup;
+			children = (
+				1F6F6DAB250010DA00E07DED /* MovieListTableViewController.swift */,
+				1F6F6DA9250010AF00E07DED /* DetailViewController.swift */,
+			);
+			name = Movie;
+			sourceTree = "<group>";
+		};
+		1F88CAC22503DFE000AF3772 /* Music */ = {
+			isa = PBXGroup;
+			children = (
+				1F88CABD2503DC9200AF3772 /* MusicViewController.swift */,
+				1F88CABF2503DFC100AF3772 /* MusicTableViewCell.swift */,
+			);
+			name = Music;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -188,11 +216,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F6F6DAC250010DA00E07DED /* MovieListTableViewController.swift in Sources */,
-				1F6F6DB2250011E200E07DED /* DataManager.swift in Sources */,
+				1F6F6DB2250011E200E07DED /* MovieDataManager.swift in Sources */,
 				1F6F6DB52500122800E07DED /* Movie.swift in Sources */,
 				1F6F6DAA250010AF00E07DED /* DetailViewController.swift in Sources */,
 				1F6F6D9625000FC000E07DED /* AppDelegate.swift in Sources */,
+				1F88CAC02503DFC100AF3772 /* MusicTableViewCell.swift in Sources */,
+				1F88CABC2503D6D700AF3772 /* Music.swift in Sources */,
+				1F88CABE2503DC9200AF3772 /* MusicViewController.swift in Sources */,
 				1F6F6D9825000FC100E07DED /* SceneDelegate.swift in Sources */,
+				1F88CABA2503CC8500AF3772 /* MusicDataManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

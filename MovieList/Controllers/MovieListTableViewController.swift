@@ -81,7 +81,7 @@ class MovieListTableViewController: UITableViewController {
     }
     */
 
-    
+    /*
     // Override to support rearranging the table view.
     
      override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
@@ -106,7 +106,7 @@ class MovieListTableViewController: UITableViewController {
          return true
      }
     
-    
+    */
     
 
     // MARK: - Navigation
@@ -127,11 +127,11 @@ class MovieListTableViewController: UITableViewController {
     
     
     // From Lesson 17 on 04.09.2020
-    func tableView(_ tableView: UITableView, moveRowAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath) {
-        let currentMovie = movies.remove(at: sourceIndexPath.row)
-        movies.insert(currentMovie, at: destinationIndexPath.row)
-    }
-    
+//    func tableView(_ tableView: UITableView, moveRowAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath) {
+//        let currentMovie = movies.remove(at: sourceIndexPath.row)
+//        movies.insert(currentMovie, at: destinationIndexPath.row)
+//    }
+   /*
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete{
             let alert = UIAlertController(title: "Are you sure you want to delete this movie?", message: nil, preferredStyle: .alert)
@@ -144,6 +144,19 @@ class MovieListTableViewController: UITableViewController {
             }))
             self.present(alert, animated: true)
             }
-    }
-}
+   // }
+//}*/
 
+// From Slack:
+    override func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCell.EditingStyle {
+    return .delete
+}
+    override func tableView(_ tableView: UITableView, shouldIndentWhileEditingRowAt indexPath: IndexPath) -> Bool {
+    return true
+}
+    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
+    let currentMovie = movies.remove(at: fromIndexPath.row)
+    movies.insert(currentMovie, at: to.row)
+}
+}
+//}

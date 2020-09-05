@@ -18,9 +18,9 @@ import Foundation
      static func createMovie() -> [Movie]{
          var movies: [Movie] = []
          
-         let titles = DataManager.shared.title
-         let years = DataManager.shared.year
-         let posters = DataManager.shared.poster
+         let titles = MovieDataManager.shared.title
+         let years = MovieDataManager.shared.year
+         let posters = MovieDataManager.shared.poster
          
          for index in 0..<titles.count {
              let movie = Movie(title: titles[index], year: years[index], poster: posters[index])
