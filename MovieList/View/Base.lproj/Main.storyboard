@@ -250,6 +250,7 @@
                     <connections>
                         <segue destination="8HU-eW-kEg" kind="relationship" relationship="viewControllers" id="2OX-EO-DAc"/>
                         <segue destination="6do-ga-D2s" kind="relationship" relationship="viewControllers" id="6gM-J5-TbT"/>
+                        <segue destination="HYj-2I-2Gh" kind="relationship" relationship="viewControllers" id="oqS-7m-xcn"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nYk-ft-LnA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -277,10 +278,62 @@
             </objects>
             <point key="canvasLocation" x="1125" y="843"/>
         </scene>
+        <!--About App-->
+        <scene sceneID="PJd-pC-eEo">
+            <objects>
+                <viewController title="About App" id="HYj-2I-2Gh" customClass="InfoViewController" customModule="MovieList" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="531-zc-GgK">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="yDa-n2-sem">
+                                <rect key="frame" x="37.5" y="91.5" width="245" height="385"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fn7-2V-I9m">
+                                        <rect key="frame" x="0.0" y="0.0" width="245" height="180"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="245" id="CrT-Oh-dVc"/>
+                                            <constraint firstAttribute="height" constant="180" id="LAu-bC-5Kh"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                        <color key="textColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IBh-sJ-2b5">
+                                        <rect key="frame" x="0.0" y="205" width="245" height="180"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="180" id="Rjs-mf-bUD"/>
+                                            <constraint firstAttribute="width" constant="245" id="x9n-aj-6pW"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                        <color key="textColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="yDa-n2-sem" firstAttribute="centerX" secondItem="531-zc-GgK" secondAttribute="centerX" id="9VP-ti-8Bd"/>
+                            <constraint firstItem="yDa-n2-sem" firstAttribute="centerY" secondItem="531-zc-GgK" secondAttribute="centerY" id="lIP-1u-iWh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="WLO-Ip-iI4"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="info" catalog="system" id="vQg-pC-nN7"/>
+                    <connections>
+                        <outlet property="aboutMoviesLabel" destination="Fn7-2V-I9m" id="WVn-vd-hDY"/>
+                        <outlet property="aboutMusicLabel" destination="IBh-sJ-2b5" id="WzP-0j-EkT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vdc-Po-b5u" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="128" y="1021"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Joker (2019)" width="548" height="811"/>
         <image name="film" catalog="system" width="128" height="93"/>
+        <image name="info" catalog="system" width="93" height="128"/>
         <image name="music.note.list" catalog="system" width="128" height="113"/>
     </resources>
 </document>

@@ -20,6 +20,7 @@
 		1F88CABC2503D6D700AF3772 /* Music.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F88CABB2503D6D700AF3772 /* Music.swift */; };
 		1F88CABE2503DC9200AF3772 /* MusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F88CABD2503DC9200AF3772 /* MusicViewController.swift */; };
 		1F88CAC02503DFC100AF3772 /* MusicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F88CABF2503DFC100AF3772 /* MusicTableViewCell.swift */; };
+		1F956C5F25068845000FC2D1 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F956C5E25068845000FC2D1 /* InfoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		1F88CABB2503D6D700AF3772 /* Music.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Music.swift; sourceTree = "<group>"; };
 		1F88CABD2503DC9200AF3772 /* MusicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicViewController.swift; sourceTree = "<group>"; };
 		1F88CABF2503DFC100AF3772 /* MusicTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicTableViewCell.swift; sourceTree = "<group>"; };
+		1F956C5E25068845000FC2D1 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +142,7 @@
 			children = (
 				1F88CABD2503DC9200AF3772 /* MusicViewController.swift */,
 				1F88CABF2503DFC100AF3772 /* MusicTableViewCell.swift */,
+				1F956C5E25068845000FC2D1 /* InfoViewController.swift */,
 			);
 			name = Music;
 			sourceTree = "<group>";
@@ -216,6 +219,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F6F6DAC250010DA00E07DED /* MovieListTableViewController.swift in Sources */,
+				1F956C5F25068845000FC2D1 /* InfoViewController.swift in Sources */,
 				1F6F6DB2250011E200E07DED /* MovieDataManager.swift in Sources */,
 				1F6F6DB52500122800E07DED /* Movie.swift in Sources */,
 				1F6F6DAA250010AF00E07DED /* DetailViewController.swift in Sources */,
